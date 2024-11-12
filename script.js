@@ -123,10 +123,16 @@ document.getElementById('gameForm').addEventListener('submit', function(event) {
 // FIM: JOGO PAR OU IMPAR
 
 // INÍCIO: FIBONACCI
+
 function toCheckFibonacci () {
-
+    
     const fibonacciNumber = document.getElementById('fibonacciNumber').value
-
+    
+        if (fibonacciNumber < 0) {
+            alert('O número precisa ser positivo')
+            return false
+        }
+        
     const resultFibonacci = document.getElementById('resultFibonacci')
 
     const fibonacci = [0, 1];
