@@ -101,6 +101,10 @@ document.getElementById('gameForm').addEventListener('submit', function(event) {
 
     let verificationNumber
 
+    if (userNumber > 10) {
+        window.alert('Tem mais de 10 dedos???')
+    }
+
     if (evenOrOdd === 'par' && sumUserCPUNumber % 2 === 0) {
         verificationNumber = `Você Ganhou!`;
 
