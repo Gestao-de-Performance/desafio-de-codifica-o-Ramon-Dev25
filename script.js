@@ -28,7 +28,7 @@ document.getElementById('calculatorForm').addEventListener('submit', function (e
 })
 // FIM: CALCULADORA EXERCÍCIO 1
 
-// INÍCIO: VETOR EXERCÍCIO 2
+// INÍCIO: ARRAY EXERCÍCIO 2
 const numbers = [];
 
 let resultVector = document.getElementById('resultVector')
@@ -59,7 +59,7 @@ function toCheckVector () {
     console.log(`A soma dos Elementos do Array é ${sumNumber}, são ${qtdNumber} elementos diferentes e a média do Array é ${mediaVector.toFixed(2)}`)
 
 }
-//FIM: VETOR EXERCÍCIO 2
+//FIM: ARRAY EXERCÍCIO 2
 
 // INÍCIO: NÚMEROS PRIMOS EXERCÍCIO 3
 function verificationPrimeNumbers(number) { 
@@ -77,6 +77,7 @@ function savePrimeNumbers(numbers) {
 function primeNumbers () {
     const primeNum = savePrimeNumbers(numbers)
     window.alert(`Esse são os números primos entre os números do Array: ${primeNum}`)
+    console.log(`Esse são os números primos entre os números do Array: ${primeNum}`)
 }
 // FIM: NÚMEROS PRIMOS EXERCÍCIO 3
 
@@ -117,3 +118,24 @@ document.getElementById('gameForm').addEventListener('submit', function(event) {
 })
 // FIM: JOGO PAR OU IMPAR
 
+// INÍCIO: FIBONACCI
+function toCheckFibonacci () {
+
+    const fibonacciNumber = document.getElementById('fibonacciNumber').value
+
+    const resultFibonacci = document.getElementById('resultFibonacci')
+
+    const fibonacci = [0, 1];
+
+    for (let i = 2; i < fibonacciNumber; i++) {
+        fibonacci.push(fibonacci[i - 1] + fibonacci[i - 2])
+    }
+
+    const valuePosition = fibonacci[fibonacci.length - 1]
+
+    resultFibonacci.textContent = `O valor da posição ${fibonacciNumber} na sequencia de Fibonacci é ${valuePosition}`
+
+    console.log(`Fibonacci completa: ${fibonacci}. O valor da posição ${fibonacciNumber} na sequencia de Fibonacci é ${valuePosition}`)
+
+}
+// FIM: FIBONACCI
