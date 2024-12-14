@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="center">
+        <h1>Desafios JavaScript</h1>
+        <form id="calculatorForm">
+            <p>Mini Calculadora</p>
+            <p class="sub-title">Exercício 1</p>
+            <div class="alignInput">
+                <input type="number" id="number1" placeholder="Escreva um número">
+                <select name="symbol" id="symbol">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="number" id="number2" placeholder="Escreva outro número">
+            </div>
+            <div class="alignInput">
+                <input class="inputResult" type="number" id="result" placeholder="Resultado" disabled>
+                <button class="button" type="submit">Calcular</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="center">
+        <div class="resultVector">
+            <form  id="vectorForm">
+                <p>Array (Vetor)</p>
+                <p class="sub-title">Exercício 2 e 3</p>
+                <div class="alignInputVector">
+                    <p class="sub-title" style="margin-bottom: 0;">Escreva números que serão adicionados em um Array</p>
+                    <div class="addVector">
+    
+                        <input class="inputVector" type="number" id="vectorNumber" placeholder="Adicione um a um">
+                        
+                        <button class="buttonHidden" type="submit">Adicionar</button>
+                        
+                        <button class="buttonCheck" onclick="toCheckVector()">Verificar</button>
+
+                        <button class="buttonCheck wid-70" onclick="primeNumbers()">Nº Primos</button>
+                    </div>
+                </div>
+            </form>
+            <p class="sub-title" style="margin-bottom: 0;">Valores Adicionados ao Array: </p>
+            <p id="resultVector" class="sub-title"></p>
+
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="resultVector">
+            <form  id="gameForm">
+                <p>Jogo: Par ou Impar</p>
+                <p class="sub-title">Exercício 4</p>
+                <div class="alignInputVector">
+                    <select name="evenOrOdd" id="evenOrOdd">
+                        <option value="par">Par</option>
+                        <option value="impar">Impar</option>
+                    </select>
+                    <p class="sub-title" style="margin-bottom: 0;">Lembre-se que você só tem 10 dedos.</p>
+                    <div class="addVector">
+    
+                        <input class="inputVector" type="number" id="userNumber" placeholder="Seu Número">
+
+                        <input class="inputVector" type="number" id="cpuNumber" placeholder="Número da CPU" disabled>
+                        
+                        <button class="buttonCheck" type="submit">Jogar</button>
+
+                    </div>
+                </div>
+            </form>
+            <p id="resultGame"></p>
+
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="resultVector">
+            <p>Fibonacci</p>
+            <p class="sub-title">Exercício 5</p>
+            <div class="alignInputVector">
+                <p class="sub-title" style="margin-bottom: 0;">Escreva um número.</p>
+                <div class="addVector">
+
+                    <input class="inputVector" type="number" style="width: 5rem;" id="fibonacciNumber">
+                    
+                    <button class="buttonCheck" style="width: 10rem;" onclick="toCheckFibonacci()">Verificar</button>
+
+                </div>
+            </div>
+            <br>
+            <p id="resultFibonacci" class="sub-title"></p>
+
+        </div>
+    </div>
+
+
+    <script src="/script.js"></script>
+
+</body>
+
+</html>
